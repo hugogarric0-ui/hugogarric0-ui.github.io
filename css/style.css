@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+nav {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15.5px);
+  -webkit-backdrop-filter: blur(15.5px);
+  border: 1px solid rgba(40, 40, 40, 0.15);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 75px;
+}
+
+#hero {
+  margin-top: 25%;
+  margin-bottom: 20%;
+  text-align: left !important;
+  margin-left: -65%;
+  scroll-margin-top: 350px;
+}
+
+#about_me {
+  color: white;
+  width: 80%; /* Prend 80% de la largeur de l'écran */
+  max-width: 1200px; /* Ne s'élargit pas trop sur les grands écrans */
+  margin: 0 auto; /* Centre le bloc principal */
+  display: flex;
+  flex-direction: column;
+}
+
+#about_me h2 {
+  text-align: center;
+  font-size: 400%;
+  margin-bottom: 50px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* 2. Partie Texte (Moitié gauche) */
+.about-text {
+  flex: 1;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* 3. Partie Image (Moitié droite) */
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Style de l'image elle-même */
+.about-image img {
+  max-width: 100%;
+  width: 350px;
+  border-radius: 20px;
+}
+
+h2,
+h3,
+h4 {
+  color: white;
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 400%;
+}
+
+section {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 100px;
+  scroll-margin-top: 95px;
+}
+
+/* Compense la hauteur de la navbar fixe pour les ancres ciblant des éléments internes */
+#about_me,
+#skills,
+#project,
+#experience,
+#tech_watch {
+  scroll-margin-top: 95px;
+}
+nav * {
+  color: white;
+  text-decoration: none;
+  font-size: 20;
+}
+
+/* Zone gauche - Logo */
+.nav-left {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+/* Zone centre - Liens */
+.nav-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Zone droite - Vide */
+.nav-right {
+  flex: 0 0 auto;
+  width: 150px;
+}
+
+#logo_nav {
+  max-height: 75px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(8, 1, 51);
+  width: 100%;
+  height: 100%;
+}
+
+#starfield {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+}
+
+/* Skills Section */
+#skills {
+  color: white;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15%;
+}
+
+#skills h2 {
+  text-align: center;
+  font-size: 400%;
+  margin-bottom: 50px;
+}
+
+#skills .splide {
+  position: relative;
+}
+
+.skill-card {
+  background: rgba(18, 9, 35, 0.047);
+  border: 2px solid rgba(166, 127, 249, 0.5);
+  border-radius: 15px;
+  padding: 30px 20px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-card:hover {
+  background: rgba(0, 0, 0, 0);
+  border-color: rgba(200, 150, 255, 0.8);
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(150, 100, 255, 0.3);
+}
+
+.skill-card h3 {
+  font-size: 1.8rem;
+  margin: 0 0 15px 0;
+  color: #523986;
+}
+
+.skill-card p {
+  font-size: 1rem;
+  margin: 0;
+  color: #665f7b;
+}
+
+/* Customize Splide for multiple slides */
+.splide__track {
+  padding: 20px 0;
+}
+
+/* Arrows */
+.splide__arrow {
+  background: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  width: 60px !important;
+  height: 60px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  transition: opacity 0.3s ease !important;
+}
+
+.splide__arrow:hover {
+  opacity: 0.7 !important;
+  background: none !important;
+  border: none !important;
+}
+
+.splide__arrow:disabled {
+  background: none !important;
+}
+
+.arrow-icon {
+  width: 40px;
+  height: 40px;
+  filter: brightness(0) invert(1);
+}
+
+.arrow-icon--prev {
+  transform: scaleX(-1);
+}
+
+/* Pagination dots */
+.splide__pagination {
+  margin-top: 30px;
+}
+
+.splide__pagination__page.is-active button {
+  background: #b084ff;
+}
+
+.splide__pagination__page button {
+  background: rgba(150, 100, 255, 0.4);
+  border: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.splide__pagination__page button:hover {
+  background: rgba(200, 150, 255, 0.8);
+}
+
+/* Experience Timeline Section */
+#experience {
+  color: white;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#experience h2 {
+  text-align: center;
+  font-size: 400%;
+  margin-bottom: 50px;
+}
+
+.timeline {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Ligne verticale au centre */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(166, 127, 249, 0.5),
+    rgba(166, 127, 249, 0.2)
+  );
+  top: 0;
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Alternance gauche-droite */
+.timeline-item:nth-child(odd) {
+  flex-direction: row;
+}
+
+.timeline-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* Point au centre */
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  background: #a67ff9;
+  border: 3px solid rgba(18, 9, 35, 0.8);
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 0 20px rgba(166, 127, 249, 0.5);
+}
+
+.timeline-card {
+  width: calc(50% - 50px);
+  background: rgba(18, 9, 35, 0.047);
+  border: 2px solid rgba(166, 127, 249, 0.5);
+  border-radius: 15px;
+  padding: 25px 20px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-card:hover {
+  background: rgba(0, 0, 0, 0);
+  border-color: rgba(200, 150, 255, 0.8);
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(150, 100, 255, 0.3);
+}
+
+.timeline-card h3 {
+  font-size: 1.4rem;
+  margin: 0 0 10px 0;
+  color: #523986;
+}
+
+.timeline-card .role {
+  font-size: 0.95rem;
+  margin: 0 0 5px 0;
+  color: #a67ff9;
+  font-weight: 600;
+}
+
+.timeline-card .company {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #665f7b;
+}
+
+.timeline-date {
+  width: calc(50% - 50px);
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #a67ff9;
+}
+
+/* Projects Section */
+#project {
+  color: white;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#project h2 {
+  text-align: center;
+  font-size: 400%;
+  margin-bottom: 50px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  width: 100%;
+}
+
+.project-card {
+  background: rgba(18, 9, 35, 0.047);
+  border: 2px solid rgba(166, 127, 249, 0.5);
+  border-radius: 15px;
+  padding: 30px 20px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card:hover {
+  background: rgba(0, 0, 0, 0);
+  border-color: rgba(200, 150, 255, 0.8);
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(150, 100, 255, 0.3);
+}
+
+.project-card h3 {
+  font-size: 1.8rem;
+  margin: 0 0 15px 0;
+  color: #523986;
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin: 0;
+  color: #665f7b;
+}

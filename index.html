@@ -1,0 +1,222 @@
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Garric Hugo</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div>
+      <nav>
+        <div class="nav-left">
+          <img
+            src="source/logo.png"
+            alt="Logo GH"
+            id="logo_nav"
+            onerror="this.style.display='none'"
+          />
+          <a href="#hero">Hugo GARRIC</a>
+        </div>
+        <div class="nav-center">
+          <a href="#about_me">About Me</a>
+          <a href="#skills">Skills</a>
+          <a href="#project">Project</a>
+          <a href="#experience">Experience</a>
+          <a href="#tech_watch">Tech Watch</a>
+        </div>
+        <div class="nav-right">
+          <!-- Zone vide à droite -->
+        </div>
+      </nav>
+      <canvas id="starfield"></canvas>
+      <section>
+        <div id="hero">
+          <h2>Hugo GARRIC</h2>
+          <h3>BTS SIO Student | Aspiring Software Developer</h3>
+          <h4>Turning passion for IT and video games into code.</h4>
+        </div>
+      </section>
+      <section>
+        <div id="about_me">
+          <h2>Who Am I ?</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                I am a first-year BTS SIO student (Services Informatiques aux
+                Organisations) based in Perpignan, France.
+              </p>
+              <p>
+                With a background in Management & Finance (Bac STMG) , I decided
+                to pivot towards my true passion: IT and software development.
+                My goal is to build a career in this dynamic field by combining
+                my logical mindset with my curiosity.
+              </p>
+              <p>
+                I am an autonomous and thoughtful learner, always eager to
+                acquire new skills and collaborate on innovative projects.
+              </p>
+            </div>
+            <div class="about-image">
+              <img src="source/pp_hugo.png" alt="Photo de Hugo Garric" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div id="skills">
+          <h2>My Skills</h2>
+          <div class="splide" aria-label="My Skills Carousel">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="skill-card">
+                    <h3>HTML</h3>
+                    <p>Web markup & structure</p>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="skill-card">
+                    <h3>CSS</h3>
+                    <p>Styling & responsive design</p>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <p>Interactive web applications</p>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="skill-card">
+                    <h3>Python</h3>
+                    <p>Backend & automation</p>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="skill-card">
+                    <h3>Git</h3>
+                    <p>Version control</p>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="skill-card">
+                    <h3>Databases</h3>
+                    <p>SQL & data management</p>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="skill-card">
+                    <h3>Problem Solving</h3>
+                    <p>Analytical thinking</p>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="skill-card">
+                    <h3>Team Work</h3>
+                    <p>Collaboration & communication</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="splide__arrows">
+              <button
+                class="splide__arrow splide__arrow--prev"
+                aria-label="Previous slide"
+              >
+                <img
+                  src="source/right-arrow-svgrepo-com.svg"
+                  alt="Previous"
+                  class="arrow-icon arrow-icon--prev"
+                />
+              </button>
+              <button
+                class="splide__arrow splide__arrow--next"
+                aria-label="Next slide"
+              >
+                <img
+                  src="source/right-arrow-svgrepo-com.svg"
+                  alt="Next"
+                  class="arrow-icon"
+                />
+              </button>
+            </div>
+            <ul class="splide__pagination"></ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div id="project">
+          <h2>My Project</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <h3>Project 1</h3>
+              <p>Description of my first project</p>
+            </div>
+            <div class="project-card">
+              <h3>Project 2</h3>
+              <p>Description of my second project</p>
+            </div>
+            <div class="project-card">
+              <h3>Project 3</h3>
+              <p>Description of my third project</p>
+            </div>
+            <div class="project-card">
+              <h3>Project 4</h3>
+              <p>Description of my fourth project</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div id="experience">
+          <h2>My Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-card">
+                <h3>Experience 1</h3>
+                <p class="role">Job Title</p>
+                <p class="company">Company Name</p>
+              </div>
+              <div class="timeline-date">2024</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-card">
+                <h3>Experience 2</h3>
+                <p class="role">Job Title</p>
+                <p class="company">Company Name</p>
+              </div>
+              <div class="timeline-date">2023</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-card">
+                <h3>Experience 3</h3>
+                <p class="role">Job Title</p>
+                <p class="company">Company Name</p>
+              </div>
+              <div class="timeline-date">2022</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-card">
+                <h3>Experience 4</h3>
+                <p class="role">Job Title</p>
+                <p class="company">Company Name</p>
+              </div>
+              <div class="timeline-date">2021</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div id="tech_watch">
+          <h2>My Tech Watch</h2>
+        </div>
+      </section>
+      <script src="js/style.js"></script>
+    </div>
+  </body>
+</html>
